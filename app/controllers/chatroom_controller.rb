@@ -3,7 +3,7 @@ class ChatroomController < ApplicationController
 
   def index
     @message = Message.new
-    @messages = Message.most_recent
+    @messages = Message.custom_display
   end
 
 end
